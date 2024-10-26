@@ -1,0 +1,32 @@
+> Module Fireplace
+
+** R1001.5 line 1 **
+Masonry fireboxes shall be constructed of solid masonry units, hollow masonry units grouted solid, stone or concrete. 
+
+```catala-metadata
+# The code suggests that there are at least four types of masonry units
+declaration enumeration MasonryType:
+    -- Solid 
+    -- Hollow 
+    -- Stone
+    -- Concrete
+
+declaration structure MasonryUnit:
+    data masonry_type content MasonryType
+
+# The has_uniform_units condition is inspired by the assumption that Fireboxes can only be constructed
+# of masonry units of one type
+# TODO: Check this assumption
+declaration scope Firebox:
+   input masonry_units content list of MasonryUnit
+   output has_uniform_units condition
+```
+
+```catala
+# The has_uniform_units condition is satisfied if all masonry_units are of the same type
+# Nested for loop is likely not the most efficient here but it is not yet clear how many masonry units a firebox can contain
+scope Firebox:
+    rule has_uniform_units
+        under condition for all m among masonry_units we have (for all n among masonry_units we have n.masonry_type = m.masonry_type)
+        consequence fulfilled
+```

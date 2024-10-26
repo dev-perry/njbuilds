@@ -1,0 +1,42 @@
+> Using Fireplace as F
+
+## Test1
+
+```catala
+declaration scope TestFirebox:
+    uniform_firebox scope F.Firebox
+    irreg_firebox scope F.Firebox
+    internal solid_unit content F.MasonryUnit
+    internal hollow_unit content F.MasonryUnit
+
+
+# Firebox should have an attribute that indicates whether it is uniform
+scope TestFirebox:
+    definition hollow_unit equals F.MasonryUnit {
+        -- masonry_type: Solid
+    }
+    definition solid_unit equals F.MasonryUnit {
+        -- masonry_type: Hollow
+    }
+
+    definition uniform_firebox.masonry_units equals [
+       solid_unit;
+       solid_unit;
+       solid_unit
+    ]
+    definition irreg_firebox.masonry_units equals [
+        solid_unit;
+        hollow_unit;
+        solid_unit
+    ]
+
+    assertion uniform_firebox.has_uniform_units = true
+    assertion irreg_firebox.has_uniform_units = false
+```
+
+```catala-test-inline
+$ catala interpret --scope TestFirebox --disable-warnings
+┌─[RESULT]─
+│ TestFirebox outcome
+└─
+```

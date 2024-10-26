@@ -1,0 +1,14 @@
+Excerpt from 2021 International Residential Code New Jersey Edition
+
+R1001.5 Firebox walls.
+Masonry fireboxes shall be constructed of solid masonry units, hollow masonry units grouted solid, stone or concrete. 
+Where a lining of firebrick not less than 2 inches (51 mm) thick or other approved lining is provided, the minimum thickness of back and sidewalls shall each be 8 inches (203 mm) of solid masonry, including the lining. 
+The width of joints between firebricks shall not be greater than 1/4 inch (6.4 mm).
+Where a lining is not provided, the total minimum thickness of back and side walls shall be 10 inches (254 mm) of solid masonry. 
+Firebrick shall conform to ASTM C27 or C1261 and shall be laid with medium-duty refractory mortar conforming to ASTM C199. 
+ 
+R1001.5.1 Steel fireplace units.
+Installation of steel fireplace units with solid masonry to form a masonry fireplace is permitted where installed either in accordance with the requirements of their listing or the requirements of this section. 
+Steel fireplace units incorporating a steel firebox lining shall be constructed with steel not less than 1/4 inch (6.4 mm) thick, and an air-circulating chamber that is ducted to the interior of the building. 
+The firebox lining shall be encased with solid masonry to provide a total thickness at the back and sides of not less than 8 inches (203 mm), of which not less than 4 inches (102 mm) shall be of solid masonry or concrete. 
+Circulating air ducts used with steel fireplace units shall be constructed of metal or masonry.
